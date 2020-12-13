@@ -1,0 +1,31 @@
+Quản lý sinh viên thực tập:
+
+	Thực tập sinh:
+		id (khóa chính)
+		họ tên 
+		dob
+		beginTT
+		endTT
+		email
+		mã phòng thực tập (khóa ngoài)
+		manager	
+	phòng ban:
+		mã phòng (khóa chính)
+		tên phòng 
+		manager
+		sdt
+	Tài khoản đăng nhập
+		user
+		password
+		quyen:
+	project:
+		idProject: (khóa chính)
+		tên project: 
+		start:
+		end:
+	work:
+		idTTS (khóa ngoài)
+		idProject (khóa ngoài)
+		status: (1 đang làm , 2: Đã xong 3: Trễ hạn)
+		Thời gian: 
+		

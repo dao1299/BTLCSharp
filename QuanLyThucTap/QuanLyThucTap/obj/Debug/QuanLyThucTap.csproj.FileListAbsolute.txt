@@ -1,0 +1,15 @@
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\bin\Debug\QuanLyThucTap.exe.config
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\bin\Debug\QuanLyThucTap.exe
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\bin\Debug\QuanLyThucTap.pdb
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.csprojAssemblyReference.cache
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.Properties.Resources.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.csproj.GenerateResource.cache
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.exe
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.pdb
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormLogin.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormThucTap.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormDuAn.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormIndex.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormPhong.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormThongKe.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormUser.resources
