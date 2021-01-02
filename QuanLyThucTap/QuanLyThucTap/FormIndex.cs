@@ -31,11 +31,9 @@ namespace QuanLyThucTap
             switch (index)
             {
                 case 0:
-                    
                     break;
                 case 1:
-                    //pnlMain.Controls.Clear();
-                    FormThucTap formThucTap = new FormThucTap() { TopLevel = false, FormBorderStyle = FormBorderStyle.None, Dock = DockStyle.Fill }; ;
+                    FormThucTap formThucTap = new FormThucTap() { TopLevel = false, FormBorderStyle = FormBorderStyle.None, Dock = DockStyle.Fill };
                     pnlMain.Controls.Add(formThucTap);
                     formThucTap.Show();
                     break;
@@ -59,6 +57,11 @@ namespace QuanLyThucTap
                     FormThongKe formThongKe = new FormThongKe() { TopLevel = false, FormBorderStyle = FormBorderStyle.None, Dock = DockStyle.Fill };
                     pnlMain.Controls.Add(formThongKe);
                     formThongKe.Show();
+                    break;
+                case 6:
+                    FormWork formWork = new FormWork() { TopLevel = false, FormBorderStyle = FormBorderStyle.None, Dock = DockStyle.Fill };
+                    pnlMain.Controls.Add(formWork);
+                    formWork.Show();
                     break;
             }
         }
@@ -90,6 +93,16 @@ namespace QuanLyThucTap
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             showFormChild(0);
+        }
+
+        private void FormIndex_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWork_Click(object sender, EventArgs e)
+        {
+            showFormChild(6);
         }
     }
 }

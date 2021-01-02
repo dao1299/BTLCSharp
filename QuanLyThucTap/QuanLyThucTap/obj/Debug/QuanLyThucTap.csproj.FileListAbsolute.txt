@@ -13,3 +13,4 @@ D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormIndex.re
 D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormPhong.resources
 D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormThongKe.resources
 D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormUser.resources
+D:\BaiTapLon\c#\QuanLyThucTap\QuanLyThucTap\obj\Debug\QuanLyThucTap.FormWork.resources
