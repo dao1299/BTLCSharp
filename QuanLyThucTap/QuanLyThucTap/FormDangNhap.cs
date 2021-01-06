@@ -13,6 +13,7 @@ namespace QuanLyThucTap
 {
     public partial class FormLogin : Form
     {
+        public static int statusLogin;
         public FormLogin()
         {
             InitializeComponent();
@@ -48,17 +49,18 @@ namespace QuanLyThucTap
                 MessageBox.Show("Đăng nhập không thành công\n Bạn hãy kiểm tra lại tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }*/
             #endregion
-            int status;
+            
             SqlDataReader sqlDataReader;
             sqlCnn.Open(); // sqlConnection
-            sqlCom.CommandText = "Select * from accout where username='"+txtUser.Text+"' and password='"+txtPass.Text+"'";
+            sqlCom.CommandText = "Select * from taikhoan where username='"+txtUser.Text+"' and password='"+txtPass.Text+"'";
             sqlDataReader = sqlCom.ExecuteReader();
             if (sqlDataReader.Read())
             {
-                status = sqlDataReader.GetInt32(5);
+                txtUser.Text = "";txtPass.Text = "";
+                statusLogin = sqlDataReader.GetInt32(2);
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                FormIndex form2 = new FormIndex();
+                FormIndex form2 = new FormIndex(statusLogin);
                 form2.ShowDialog();
                 this.Show();
             }

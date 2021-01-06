@@ -12,11 +12,30 @@ namespace QuanLyThucTap
 {
     public partial class FormIndex : Form
     {
-        public FormIndex()
+        public FormIndex(int statusLogin)
         {
             InitializeComponent();
+            PhanQuyen(statusLogin);
         }
-
+        private void PhanQuyen(int statusLogin)
+        {
+            switch (statusLogin)
+            {
+                case 1:
+                    break;
+                case 3:
+                    btnThucTap.Enabled = false;
+                    btnPhong.Enabled = false;
+                    btnDuAn.Enabled = false;
+                    btnUser.Enabled = false;
+                    btnWork.Enabled = false;
+                    break;
+                case 2:
+                    btnPhong.Enabled = false;
+                    btnUser.Enabled = false;
+                    break;
+            }
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult kq = MessageBox.Show("Bạn có muốn thoát? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
