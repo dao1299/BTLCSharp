@@ -219,5 +219,13 @@ namespace QuanLyThucTap
         {
             loadData("select * from work where ma_tts like '%"+txtMaTTSTK.Text.Trim()+"%'");
         }
+
+        private void dgvWork_Click(object sender, EventArgs e)
+        {
+            var i = dgvWork.CurrentRow.Index;
+            txtMaTT.Text = dgvWork.Rows[i].Cells[0].Value.ToString();
+            txtMaDA.Text = dgvWork.Rows[i].Cells[1].Value.ToString();
+            cbbTrangThai.Text = dgvWork.Rows[i].Cells[2].Value.ToString();
+        }
     }
 }

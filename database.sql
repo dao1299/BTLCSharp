@@ -142,3 +142,7 @@ group by phong.ma_phong,PHONG.ten_phong
 
 select * from thuc_tap 
 where not((bat_dau_thuc_tap <= '2020-07-01' and ket_thuc_thuc_tap<='2020-07-30') or (bat_dau_thuc_tap >= '2020-07-01' and ket_thuc_thuc_tap>='2020-07-30'))
+
+select * from work
+
+select count(*) as Số_lượng_công_việc,tinh_trang as Tình_trạng from work where ma_tts='TT002' group by tinh_trang

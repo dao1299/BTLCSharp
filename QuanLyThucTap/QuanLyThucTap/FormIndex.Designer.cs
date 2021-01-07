@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.pnlMain = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
@@ -38,6 +37,7 @@
             this.btnThucTap = new System.Windows.Forms.Button();
             this.btnDuAn = new System.Windows.Forms.Button();
             this.btnPhong = new System.Windows.Forms.Button();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,16 +59,6 @@
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.Size = new System.Drawing.Size(200, 499);
             this.pnlLeft.TabIndex = 0;
-            // 
-            // pnlMain
-            // 
-            this.pnlMain.BackgroundImage = global::QuanLyThucTap.Properties.Resources.logo;
-            this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(200, 0);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1050, 499);
-            this.pnlMain.TabIndex = 1;
             // 
             // btnUser
             // 
@@ -200,6 +190,16 @@
             this.btnPhong.UseVisualStyleBackColor = true;
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
+            // pnlMain
+            // 
+            this.pnlMain.BackgroundImage = global::QuanLyThucTap.Properties.Resources.logo;
+            this.pnlMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1050, 499);
+            this.pnlMain.TabIndex = 1;
+            // 
             // FormIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,7 +211,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FormIndex";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản lý ký túc xá";
+            this.Text = "Quản lý thực tập";
             this.Load += new System.EventHandler(this.FormIndex_Load);
             this.pnlLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

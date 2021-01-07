@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -53,18 +52,9 @@
             this.dgvUser.TabIndex = 11;
             this.dgvUser.Click += new System.EventHandler(this.dgvUser_Click);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(175, 355);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 57);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(12, 355);
+            this.btnXoa.Location = new System.Drawing.Point(92, 355);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(127, 57);
             this.btnXoa.TabIndex = 9;
@@ -166,7 +156,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 461);
             this.Controls.Add(this.dgvUser);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -184,7 +173,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvUser;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;

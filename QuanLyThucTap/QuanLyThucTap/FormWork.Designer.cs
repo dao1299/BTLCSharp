@@ -152,6 +152,7 @@
             this.dgvWork.Name = "dgvWork";
             this.dgvWork.Size = new System.Drawing.Size(691, 364);
             this.dgvWork.TabIndex = 5;
+            this.dgvWork.Click += new System.EventHandler(this.dgvWork_Click);
             // 
             // btnTimKiem
             // 

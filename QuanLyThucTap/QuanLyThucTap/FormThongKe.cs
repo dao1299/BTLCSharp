@@ -167,6 +167,7 @@ namespace QuanLyThucTap
                     groupBox1.Visible = true;
                     break;
             }
+            lblTitle.Text = cbbTieuChi.Text;
         }
 
         private void btnDate2_Click(object sender, EventArgs e)

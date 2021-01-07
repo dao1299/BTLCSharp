@@ -29,21 +29,16 @@
         private void InitializeComponent()
         {
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.mcd = new System.Windows.Forms.MonthCalendar();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.rdbKhac = new System.Windows.Forms.RadioButton();
+            this.rdbNu = new System.Windows.Forms.RadioButton();
+            this.rdbNam = new System.Windows.Forms.RadioButton();
             this.lblGioiTinh = new System.Windows.Forms.Label();
-            this.cmbPhongBan = new System.Windows.Forms.ComboBox();
-            this.btnNgayKT = new System.Windows.Forms.Button();
+            this.cbbPhongBan = new System.Windows.Forms.ComboBox();
             this.lblPhongBan = new System.Windows.Forms.Label();
-            this.txtEnd = new System.Windows.Forms.TextBox();
             this.lblNgayKT = new System.Windows.Forms.Label();
-            this.btnNgayBD = new System.Windows.Forms.Button();
-            this.txtStart = new System.Windows.Forms.TextBox();
             this.lblNgayBD = new System.Windows.Forms.Label();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
             this.lblNgaySinh = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lblHoTen = new System.Windows.Forms.Label();
@@ -53,35 +48,39 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.cmbTieuChi = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.cbbTieuChi = new System.Windows.Forms.ComboBox();
+            this.dgvThucTap = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbbSearchPhong = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.sqlCmd = new System.Data.SqlClient.SqlCommand();
+            this.sqlCnn = new System.Data.SqlClient.SqlConnection();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.dtpStart = new System.Windows.Forms.DateTimePicker();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.grbThongTin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThucTap)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbThongTin
             // 
-            this.grbThongTin.Controls.Add(this.button1);
-            this.grbThongTin.Controls.Add(this.radioButton3);
-            this.grbThongTin.Controls.Add(this.radioButton2);
-            this.grbThongTin.Controls.Add(this.radioButton1);
-            this.grbThongTin.Controls.Add(this.mcd);
+            this.grbThongTin.Controls.Add(this.dtpEnd);
+            this.grbThongTin.Controls.Add(this.dtpStart);
+            this.grbThongTin.Controls.Add(this.dtpNgaySinh);
+            this.grbThongTin.Controls.Add(this.txtEmail);
+            this.grbThongTin.Controls.Add(this.lblEmail);
+            this.grbThongTin.Controls.Add(this.rdbKhac);
+            this.grbThongTin.Controls.Add(this.rdbNu);
+            this.grbThongTin.Controls.Add(this.rdbNam);
             this.grbThongTin.Controls.Add(this.lblGioiTinh);
-            this.grbThongTin.Controls.Add(this.cmbPhongBan);
-            this.grbThongTin.Controls.Add(this.btnNgayKT);
+            this.grbThongTin.Controls.Add(this.cbbPhongBan);
             this.grbThongTin.Controls.Add(this.lblPhongBan);
-            this.grbThongTin.Controls.Add(this.txtEnd);
             this.grbThongTin.Controls.Add(this.lblNgayKT);
-            this.grbThongTin.Controls.Add(this.btnNgayBD);
-            this.grbThongTin.Controls.Add(this.txtStart);
             this.grbThongTin.Controls.Add(this.lblNgayBD);
-            this.grbThongTin.Controls.Add(this.txtNgaySinh);
             this.grbThongTin.Controls.Add(this.lblNgaySinh);
             this.grbThongTin.Controls.Add(this.txtHoTen);
             this.grbThongTin.Controls.Add(this.lblHoTen);
@@ -94,153 +93,108 @@
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin sinh viên";
             // 
-            // button1
+            // txtEmail
             // 
-            this.button1.Location = new System.Drawing.Point(380, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtEmail.Location = new System.Drawing.Point(121, 216);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(305, 20);
+            this.txtEmail.TabIndex = 12;
             // 
-            // radioButton3
+            // lblEmail
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(307, 95);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(50, 17);
-            this.radioButton3.TabIndex = 28;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Khác";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(25, 219);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.TabIndex = 30;
+            this.lblEmail.Text = "Email:";
             // 
-            // radioButton2
+            // rdbKhac
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(217, 95);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 27;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbKhac.AutoSize = true;
+            this.rdbKhac.Location = new System.Drawing.Point(307, 82);
+            this.rdbKhac.Name = "rdbKhac";
+            this.rdbKhac.Size = new System.Drawing.Size(50, 17);
+            this.rdbKhac.TabIndex = 5;
+            this.rdbKhac.TabStop = true;
+            this.rdbKhac.Text = "Khác";
+            this.rdbKhac.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbNu
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(121, 95);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbNu.AutoSize = true;
+            this.rdbNu.Location = new System.Drawing.Point(217, 82);
+            this.rdbNu.Name = "rdbNu";
+            this.rdbNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbNu.TabIndex = 4;
+            this.rdbNu.TabStop = true;
+            this.rdbNu.Text = "Nữ";
+            this.rdbNu.UseVisualStyleBackColor = true;
             // 
-            // mcd
+            // rdbNam
             // 
-            this.mcd.Location = new System.Drawing.Point(121, 133);
-            this.mcd.Name = "mcd";
-            this.mcd.TabIndex = 27;
-            this.mcd.Visible = false;
-            this.mcd.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mcd_DateChanged);
-            this.mcd.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.mcd_DateSelected);
+            this.rdbNam.AutoSize = true;
+            this.rdbNam.Checked = true;
+            this.rdbNam.Location = new System.Drawing.Point(121, 82);
+            this.rdbNam.Name = "rdbNam";
+            this.rdbNam.Size = new System.Drawing.Size(47, 17);
+            this.rdbNam.TabIndex = 3;
+            this.rdbNam.TabStop = true;
+            this.rdbNam.Text = "Nam";
+            this.rdbNam.UseVisualStyleBackColor = true;
             // 
             // lblGioiTinh
             // 
             this.lblGioiTinh.AutoSize = true;
-            this.lblGioiTinh.Location = new System.Drawing.Point(25, 97);
+            this.lblGioiTinh.Location = new System.Drawing.Point(25, 84);
             this.lblGioiTinh.Name = "lblGioiTinh";
             this.lblGioiTinh.Size = new System.Drawing.Size(50, 13);
             this.lblGioiTinh.TabIndex = 25;
             this.lblGioiTinh.Text = "Giới tính:";
             // 
-            // cmbPhongBan
+            // cbbPhongBan
             // 
-            this.cmbPhongBan.FormattingEnabled = true;
-            this.cmbPhongBan.Items.AddRange(new object[] {
+            this.cbbPhongBan.FormattingEnabled = true;
+            this.cbbPhongBan.Items.AddRange(new object[] {
             "Dev1",
             "Dev2"});
-            this.cmbPhongBan.Location = new System.Drawing.Point(121, 265);
-            this.cmbPhongBan.Name = "cmbPhongBan";
-            this.cmbPhongBan.Size = new System.Drawing.Size(305, 21);
-            this.cmbPhongBan.TabIndex = 12;
-            // 
-            // btnNgayKT
-            // 
-            this.btnNgayKT.Location = new System.Drawing.Point(380, 220);
-            this.btnNgayKT.Name = "btnNgayKT";
-            this.btnNgayKT.Size = new System.Drawing.Size(46, 23);
-            this.btnNgayKT.TabIndex = 19;
-            this.btnNgayKT.Text = "...";
-            this.btnNgayKT.UseVisualStyleBackColor = true;
-            this.btnNgayKT.Click += new System.EventHandler(this.btnNgayKT_Click);
+            this.cbbPhongBan.Location = new System.Drawing.Point(121, 252);
+            this.cbbPhongBan.Name = "cbbPhongBan";
+            this.cbbPhongBan.Size = new System.Drawing.Size(305, 21);
+            this.cbbPhongBan.TabIndex = 13;
+            this.cbbPhongBan.SelectedIndexChanged += new System.EventHandler(this.cbbPhongBan_SelectedIndexChanged);
             // 
             // lblPhongBan
             // 
             this.lblPhongBan.AutoSize = true;
-            this.lblPhongBan.Location = new System.Drawing.Point(25, 268);
+            this.lblPhongBan.Location = new System.Drawing.Point(25, 255);
             this.lblPhongBan.Name = "lblPhongBan";
             this.lblPhongBan.Size = new System.Drawing.Size(62, 13);
             this.lblPhongBan.TabIndex = 11;
             this.lblPhongBan.Text = "Phòng ban:";
             // 
-            // txtEnd
-            // 
-            this.txtEnd.Enabled = false;
-            this.txtEnd.Location = new System.Drawing.Point(121, 222);
-            this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(253, 20);
-            this.txtEnd.TabIndex = 21;
-            // 
             // lblNgayKT
             // 
             this.lblNgayKT.AutoSize = true;
-            this.lblNgayKT.Location = new System.Drawing.Point(25, 225);
+            this.lblNgayKT.Location = new System.Drawing.Point(25, 185);
             this.lblNgayKT.Name = "lblNgayKT";
             this.lblNgayKT.Size = new System.Drawing.Size(77, 13);
             this.lblNgayKT.TabIndex = 20;
             this.lblNgayKT.Text = "Ngày kết thúc:";
             // 
-            // btnNgayBD
-            // 
-            this.btnNgayBD.Location = new System.Drawing.Point(380, 178);
-            this.btnNgayBD.Name = "btnNgayBD";
-            this.btnNgayBD.Size = new System.Drawing.Size(46, 23);
-            this.btnNgayBD.TabIndex = 11;
-            this.btnNgayBD.Text = "...";
-            this.btnNgayBD.UseVisualStyleBackColor = true;
-            this.btnNgayBD.Click += new System.EventHandler(this.btnNgayBD_Click);
-            // 
-            // txtStart
-            // 
-            this.txtStart.Enabled = false;
-            this.txtStart.Location = new System.Drawing.Point(121, 180);
-            this.txtStart.Name = "txtStart";
-            this.txtStart.Size = new System.Drawing.Size(253, 20);
-            this.txtStart.TabIndex = 18;
-            // 
             // lblNgayBD
             // 
             this.lblNgayBD.AutoSize = true;
-            this.lblNgayBD.Location = new System.Drawing.Point(25, 183);
+            this.lblNgayBD.Location = new System.Drawing.Point(25, 152);
             this.lblNgayBD.Name = "lblNgayBD";
             this.lblNgayBD.Size = new System.Drawing.Size(75, 13);
             this.lblNgayBD.TabIndex = 17;
             this.lblNgayBD.Text = "Ngày bắt đầu:";
             // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.Enabled = false;
-            this.txtNgaySinh.Location = new System.Drawing.Point(121, 135);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(253, 20);
-            this.txtNgaySinh.TabIndex = 16;
-            // 
             // lblNgaySinh
             // 
             this.lblNgaySinh.AutoSize = true;
-            this.lblNgaySinh.Location = new System.Drawing.Point(25, 138);
+            this.lblNgaySinh.Location = new System.Drawing.Point(25, 115);
             this.lblNgaySinh.Name = "lblNgaySinh";
             this.lblNgaySinh.Size = new System.Drawing.Size(57, 13);
             this.lblNgaySinh.TabIndex = 15;
@@ -248,15 +202,15 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(121, 57);
+            this.txtHoTen.Location = new System.Drawing.Point(121, 50);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(305, 20);
-            this.txtHoTen.TabIndex = 14;
+            this.txtHoTen.TabIndex = 2;
             // 
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Location = new System.Drawing.Point(25, 60);
+            this.lblHoTen.Location = new System.Drawing.Point(25, 53);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(42, 13);
             this.lblHoTen.TabIndex = 13;
@@ -267,7 +221,7 @@
             this.txtID.Location = new System.Drawing.Point(121, 19);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(305, 20);
-            this.txtID.TabIndex = 12;
+            this.txtID.TabIndex = 1;
             // 
             // lblID
             // 
@@ -286,6 +240,7 @@
             this.btnXoaform.TabIndex = 24;
             this.btnXoaform.Text = "Xóa Form";
             this.btnXoaform.UseVisualStyleBackColor = true;
+            this.btnXoaform.Click += new System.EventHandler(this.btnXoaform_Click);
             // 
             // btnXoa
             // 
@@ -295,6 +250,7 @@
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -302,8 +258,9 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(90, 60);
             this.btnSua.TabIndex = 22;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "Cập nhập";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -313,53 +270,72 @@
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // txtTimKiem
+            // txtSearch
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(139, 18);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(189, 20);
-            this.txtTimKiem.TabIndex = 35;
+            this.txtSearch.Location = new System.Drawing.Point(139, 18);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(189, 20);
+            this.txtSearch.TabIndex = 35;
             // 
-            // btnTimKiem
+            // btnSearch
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(345, 16);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(114, 23);
-            this.btnTimKiem.TabIndex = 36;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(345, 16);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(114, 23);
+            this.btnSearch.TabIndex = 36;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // cmbTieuChi
+            // cbbTieuChi
             // 
-            this.cmbTieuChi.FormattingEnabled = true;
-            this.cmbTieuChi.Items.AddRange(new object[] {
+            this.cbbTieuChi.FormattingEnabled = true;
+            this.cbbTieuChi.Items.AddRange(new object[] {
             "ID",
-            "Họ tên"});
-            this.cmbTieuChi.Location = new System.Drawing.Point(0, 17);
-            this.cmbTieuChi.Name = "cmbTieuChi";
-            this.cmbTieuChi.Size = new System.Drawing.Size(121, 21);
-            this.cmbTieuChi.TabIndex = 34;
+            "Họ tên",
+            "Phòng ban"});
+            this.cbbTieuChi.Location = new System.Drawing.Point(0, 17);
+            this.cbbTieuChi.Name = "cbbTieuChi";
+            this.cbbTieuChi.Size = new System.Drawing.Size(121, 21);
+            this.cbbTieuChi.TabIndex = 34;
+            this.cbbTieuChi.SelectedIndexChanged += new System.EventHandler(this.cbbTieuChi_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // dgvThucTap
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(503, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(535, 464);
-            this.dataGridView1.TabIndex = 41;
+            this.dgvThucTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThucTap.Location = new System.Drawing.Point(503, 24);
+            this.dgvThucTap.Name = "dgvThucTap";
+            this.dgvThucTap.Size = new System.Drawing.Size(535, 464);
+            this.dgvThucTap.TabIndex = 41;
+            this.dgvThucTap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThucTap_CellClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnTimKiem);
-            this.groupBox1.Controls.Add(this.cmbTieuChi);
-            this.groupBox1.Controls.Add(this.txtTimKiem);
+            this.groupBox1.Controls.Add(this.cbbSearchPhong);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.cbbTieuChi);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Location = new System.Drawing.Point(25, 24);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(459, 55);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
+            // 
+            // cbbSearchPhong
+            // 
+            this.cbbSearchPhong.FormattingEnabled = true;
+            this.cbbSearchPhong.Items.AddRange(new object[] {
+            "Dev1",
+            "Dev2"});
+            this.cbbSearchPhong.Location = new System.Drawing.Point(139, 16);
+            this.cbbSearchPhong.Name = "cbbSearchPhong";
+            this.cbbSearchPhong.Size = new System.Drawing.Size(189, 21);
+            this.cbbSearchPhong.TabIndex = 33;
+            this.cbbSearchPhong.Visible = false;
+            this.cbbSearchPhong.SelectedIndexChanged += new System.EventHandler(this.cbbSearchPhong_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -373,6 +349,33 @@
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             // 
+            // sqlCnn
+            // 
+            this.sqlCnn.ConnectionString = "Data Source = ADMIN\\SQLEXPRESS; Initial Catalog = QLTT; Integrated Security = Tru" +
+    "e";
+            this.sqlCnn.FireInfoMessageEventOnUserErrors = false;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Location = new System.Drawing.Point(121, 109);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(305, 20);
+            this.dtpNgaySinh.TabIndex = 31;
+            // 
+            // dtpStart
+            // 
+            this.dtpStart.Location = new System.Drawing.Point(121, 146);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(305, 20);
+            this.dtpStart.TabIndex = 32;
+            // 
+            // dtpEnd
+            // 
+            this.dtpEnd.Location = new System.Drawing.Point(121, 179);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(305, 20);
+            this.dtpEnd.TabIndex = 33;
+            // 
             // FormThucTap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,14 +383,14 @@
             this.ClientSize = new System.Drawing.Size(1050, 500);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvThucTap);
             this.Controls.Add(this.grbThongTin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormThucTap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.grbThongTin.ResumeLayout(false);
             this.grbThongTin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThucTap)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -397,35 +400,36 @@
 
         #endregion
         private System.Windows.Forms.GroupBox grbThongTin;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.MonthCalendar mcd;
+        private System.Windows.Forms.RadioButton rdbKhac;
+        private System.Windows.Forms.RadioButton rdbNu;
+        private System.Windows.Forms.RadioButton rdbNam;
         private System.Windows.Forms.Label lblGioiTinh;
         private System.Windows.Forms.Button btnXoaform;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.ComboBox cmbPhongBan;
-        private System.Windows.Forms.Button btnNgayKT;
+        private System.Windows.Forms.ComboBox cbbPhongBan;
         private System.Windows.Forms.Label lblPhongBan;
-        private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.Label lblNgayKT;
-        private System.Windows.Forms.Button btnNgayBD;
-        private System.Windows.Forms.TextBox txtStart;
         private System.Windows.Forms.Label lblNgayBD;
-        private System.Windows.Forms.TextBox txtNgaySinh;
         private System.Windows.Forms.Label lblNgaySinh;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.ComboBox cmbTieuChi;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox cbbTieuChi;
+        private System.Windows.Forms.DataGridView dgvThucTap;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Data.SqlClient.SqlCommand sqlCmd;
+        private System.Data.SqlClient.SqlConnection sqlCnn;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ComboBox cbbSearchPhong;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
+        private System.Windows.Forms.DateTimePicker dtpStart;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
     }
 }
